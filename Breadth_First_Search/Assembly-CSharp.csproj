@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CubeEditorInEditMode.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
+    <Compile Include="Assets\Scripts\SearchPath.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/JOJU/UNITY_PROJECTS/3D/Breadth_First_Search_Simulation/Breadth_First_Search/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

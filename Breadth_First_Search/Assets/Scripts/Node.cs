@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    // Singleton
-    private static Node _instance;
-    public static Node Instance { get { return _instance; } }
-
+    
     [SerializeField] private int _gridSize = 11;                              // Grid snap units
     public int GridSize { get { return _gridSize; } }
 
+    public bool isExplored = false;
+    public Node isExploredFrom;
 
-
-    private void OnEnable()
+    private void Start()
     {
-        if (_instance == null) { _instance = this; }         // Use this while using Singleton
+        
     }
 
+
+    private void Update()
+    {
+        
+    }
 
     // Get current position; Used in CubeEditorInEditMode.cs for snapping to grid
     public Vector2Int GetPos()
