@@ -17,14 +17,19 @@ public class SearchPath : MonoBehaviour
     private Queue<Node> _queue = new Queue<Node>();         // Queue for enqueueing nodes and traversing through them
     private Node _searchingPoint;                           // Current node we are searching
     private bool _isExploring = true;                       // If we are end then it is set to false
-    private List<Node> _path = new List<Node>();                               // For storing the path traversed
 
-
-    private void Start()
-    {
-        LoadAllBlocks();
-        BFS();
-        CreatePath();
+    private List<Node> _path = new List<Node>();            // For storing the path traversed
+    public List<Node> Path {
+        get
+        {
+            if (_path.Count == 0)                           // If we've already found path, no need to check it again
+            {
+                LoadAllBlocks();
+                BFS();
+                CreatePath();
+            }
+            return _path;
+        }
     }
 
     private void Update()
