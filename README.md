@@ -3,6 +3,7 @@
 ## Gameplay - https://www.youtube.com/watch?v=UHCZF_oP3QU
 ## Itch.io - https://crew7studiogames.itch.io/bfs-simulation-using-unity-game-engine
 
+<br/><br/>
 ## This algorithm can be used in Tower Defense games  for Enemy AI to find shortest path between two points
 
 This Unity project uses  Breadth First Search algorithm to find the shortest path between 2 points.
